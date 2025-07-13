@@ -48,15 +48,22 @@
       const weight = parseFloat(document.getElementById("weight").value);
       const height = parseFloat(document.getElementById("height").value);
 
-      const res = await fetch("https://bmi-calculator-app-sigma.vercel.app/", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ weight, height }),
-      });
+      const res = await fetch(
+        "https://bmi-calculator-app-sigma.vercel.app/api/bmi-calculator",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ weight, height }),
+        }
+      );
       const data = await res.json();
       document.getElementById("result").innerHTML =
         `Your BMI is: <strong>${data.bmi}</strong><br>` +
         `You are classified as: <strong>${data.category}</strong>`;
+
+      console.log("Weight:", weight);
+      console.log("Height:", height);
+      console.log("Calling API...");
     }
   </script>
   <footer>&copy; 2025 Jenny Anne Dula | BMI Calculator App</footer>
