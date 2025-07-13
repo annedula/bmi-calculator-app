@@ -48,7 +48,7 @@
       const weight = parseFloat(document.getElementById("weight").value);
       const height = parseFloat(document.getElementById("height").value);
 
-      const res = await fetch("http://localhost:3000/bmi-calculator", {
+      const res = await fetch("https://bmi-calculator-app-sigma.vercel.app/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ weight, height }),
