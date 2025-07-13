@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: "Roboto";
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 50px;
+  font-size: 20px;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Roboto";
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-family: "Roboto";
+  border: 1px solid;
+  background-color: #1e8449;
+  color: white;
+  font-weight: bold;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #28b463;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+}
+
+#result {
+  font-size: 14px;
+  font-family: "Roboto";
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+  margin: 0;
+}
+
+table,
+tr,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 8px 8px;
+  margin-top: 50px;
+}
+
+#result {
+  font-size: 16px;
+}
